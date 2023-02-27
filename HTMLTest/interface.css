@@ -4,6 +4,10 @@ html, body {
     background-color: #eff0f1;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo-header {
     background-color: #ffffff;
     padding: 10px;
@@ -40,7 +44,6 @@ html, body {
 
 .io-panel {
     background-color: #ffffff;
-
 }
 
 .wg-cc100-image {
@@ -52,7 +55,7 @@ html, body {
     border: 1px;
     margin: 2px;
     padding: 10px; 
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 .column:nth-child(2) {
     background-color: #eff0f1;
@@ -71,15 +74,6 @@ html, body {
 .img-cc100 {
     display: block;
 }
-
-/* @media screen and (max-width: 1400px) {
-    .img-cc100 {
-        width: 704px;
-        height: 516px;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-} */
 
 @media screen and (max-width: 1500px) {
     .wg-content-panel .column:nth-child(2) {
