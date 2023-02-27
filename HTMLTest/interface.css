@@ -38,14 +38,6 @@ html, body {
     height: 100px;
 } */
 
-.left, .right {
-    width: 25%;
-}
-
-.middle {
-    width: 50%;
-}
-
 .io-panel {
     background-color: #ffffff;
 
@@ -63,8 +55,19 @@ html, body {
     background-color: #ffffff;
 }
 .column:nth-child(2) {
-    background-color: #eff0f1
+    background-color: #eff0f1;
 
+
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        flex-basis: 40%;
+    }
+
+    .columns .column:nth-child(2) {
+        flex-basis: 50%;
+    }
 }
 
 .wg-content-panel {
