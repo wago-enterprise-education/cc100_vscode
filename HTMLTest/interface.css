@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #eff0f1;
+}
+
+.logo-header {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.wago-logo {
+    margin-left: 36.5px;
+}
+
+.link-menu-icon {
+    display: flex;
+    order: 2;
+    justify-content: flex-end;
+    color: #1F2837;
+}
+
+/* .wg-content-panel:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 0px;
+    height: 100px;
+} */
+
+.left, .right {
+    width: 25%;
+}
+
+.middle {
+    width: 50%;
+}
+
+.io-panel {
+    background-color: #ffffff;
+
+}
+
+.wg-cc100-image {
+    width: 50%;
+}
+
+.column {
+    flex: 1;
+    border: 1px;
+    margin: 2px;
+    padding: 10px; 
+    background-color: #ffffff;
+}
+.column:nth-child(2) {
+    background-color: #eff0f1
+
+}
+
+.wg-content-panel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+}
