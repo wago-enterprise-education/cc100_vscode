@@ -56,18 +56,9 @@ html, body {
 }
 .column:nth-child(2) {
     background-color: #eff0f1;
-
-
-}
-
-@media screen and (max-width: 980px) {
-    .columns .column {
-        flex-basis: 40%;
-    }
-
-    .columns .column:nth-child(2) {
-        flex-basis: 50%;
-    }
+    margin-left: 75px;
+    margin-right: 75px;
+    
 }
 
 .wg-content-panel {
@@ -75,4 +66,27 @@ html, body {
     flex-flow: row wrap;
     justify-content: center;
     margin: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .wg-content-panel .column {
+        flex-basis: 40%;
+    }
+
+    .wg-content-panel .column:nth-child(2) {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .wg-content-panel .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+
+    }
+
+    .img-cc100 {
+        height: 373.9px;
+        width: 510px;
+    }
 }
