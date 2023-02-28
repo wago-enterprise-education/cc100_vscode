@@ -44,7 +44,7 @@ def digitalWrite(output: DigitalOutputs, value: bool):
 
     Function switches the output to the specified value.
     Function does not check the current value of the output
-    Function returns True wenn value is written, returns False when an Error occured
+    Function returns True when value is written, returns False when an Error occured
     """
 
     # Check if the type of the input is correct
@@ -210,7 +210,7 @@ def digitalRead(input: DigitalInputs):
         inputBit = 8 - input
 
         # Returns the value of the state of the desired input
-        # Note: Last index(read from left to right) ist the Least Significant Bit.
+        # Note: Last index(read from left to right) is the Least Significant Bit.
         if int(value0B[inputBit]) == 1:
             return True
         else:
