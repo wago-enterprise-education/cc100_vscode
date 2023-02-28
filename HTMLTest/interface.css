@@ -89,6 +89,11 @@ body {
     alt: Inutp-img;
 }
 
+.toggle{
+    height: 40px;
+    alt: Toggle;
+}
+
 .table{
     width: 100%;
     text-align: center;
