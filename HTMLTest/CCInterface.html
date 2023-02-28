@@ -29,39 +29,90 @@
         </div>
 
         <div class="column">
-            <header class="io-panel">
+            <div class="io-panel">
                 <h1>Inputs</h1>
-                <h2>Digital</h2>
-                <div class="dig-inputs">
-                    <div class="input-left">
-                        DI1 <img src="images\Input-circle.png" alt="Input 1">
-                        <br>DI3 <img src="images\Input-circle.png" alt="Input 3">
-                        <br>DI5 <img src="images\Input-circle.png" alt="Input 5">
-                        <br>DI7 <img src="images\Input-circle.png" alt="Input 7">
-                    </div>
-
-                    <div class="input-right">
-                        DI2 <img src="images\Input-circle.png" alt="Input 2">
-                        <br>DI4 <img src="images\Input-circle.png" alt="Input 4">
-                        <br>DI6 <img src="images\Input-circle.png" alt="Input 6">
-                        <br>DI8 <img src="images\Input-circle.png" alt="Input 8">
-                    </div>
-
-                    <!--
-                    DI1 <img src="images\Input-circle.png" alt="Input 1"> DI2 <img src="images\Input-circle.png" alt="Input 2">
-                    <br>DI3 <img src="images\Input-circle.png" alt="Input 3"> DI4 <img src="images\Input-circle.png" alt="Input 4">
-                    <br>DI5 <img src="images\Input-circle.png" alt="Input 5"> DI6 <img src="images\Input-circle.png" alt="Input 6">
-                    <br>DI7 <img src="images\Input-circle.png" alt="Input 7"> DI8 <img src="images\Input-circle.png" alt="Input 8">
-                    -->
-                </div>
-            </header>
-            <div class="io-panel">
-                <h2>3</h2>
-                
             </div>
+
+            <!-- Digital Inputs-->
+            <div class="io-panel">  
+                <h2>Digital</h2>
+                <div class="inputs">
+                    <table class="table" border="0">
+                        <tr>
+                            <td>DI1</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                            <td class="blank">--</td>
+                            <td>DI2</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                        </tr><tr>
+                        </tr><tr>
+                            <td>DI3</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                            <td class="blank">--</td>
+                            <td>DI4</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                        </tr><tr>
+                        </tr><tr>
+                            <td>DI5</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                            <td class="blank">--</td>
+                            <td>DI6</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                        </tr><tr>
+                        </tr><tr>
+                            <td>DI7</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                            <td class="blank">--</td>
+                            <td>DI8</td>
+                            <td><img src="images\Input-circle.png" class="input-img"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Analog Inputs-->
             <div class="io-panel">
-                <h2>3</h2>
-                
+                <h2>Analog</h2>
+                <div class="inputs">
+                    <table class="table" border="0">
+                        <tr>
+                            <td>A1
+                            </td><td class="analog-tableon">
+                                <label>7000</label><label> mV</label>
+                            </td>
+                        </tr><tr>
+                            </tr><tr>
+                            <td>A2
+                            </td><td class="analog-tableoff">
+                                <label>0000</label><label> mV</label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <!-- Temp Inputs-->
+            <div class="io-panel">
+                <h2>Temperature</h2>
+                    <div class="inputs">
+                        <table class="table" border="0">
+                            <tr>
+                                <td>PT1
+                                </td><td class="temp-table">
+                                    <label>120</label><label> K</label>
+                                </td>
+                            </tr><tr>
+                            </tr><tr>
+                                <td>PT2
+                                </td><td class="temp-table">
+                                    <label>000</label><label> K</label>
+                                </td>
+                            </tr>
+    
+                        </table>
+
+                    </div>
             </div>            
         </div>
     </div>
