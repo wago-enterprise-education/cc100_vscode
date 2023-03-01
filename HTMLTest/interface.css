@@ -48,6 +48,12 @@ body {
 
 .io-panel {
     background-color: #ffffff;
+    flex-grow: 1;
+}
+
+.io-header{
+    background-color: #ffffff;
+    flex-grow: 0;
 }
 
 .wg-cc100-image {
@@ -66,6 +72,7 @@ body {
     margin-left: 75px;
     margin-right: 75px;
     justify-content: center;
+    display: flex;
 }
 
 .wg-content-panel {
