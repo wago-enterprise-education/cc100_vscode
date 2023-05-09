@@ -1,0 +1,167 @@
+.ai-display {
+    background-color: #DEDFE1;
+    width: auto; 
+    display: inline; 
+    flex-grow: 1;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    margin-left: 20px;
+    height: 25px;
+  }
+  
+  .temperature-display {
+      border:2px solid #A5A8AF; 
+      width: auto; 
+      display: inline; 
+      flex-grow: 1;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 25px;
+      margin-left: 20px;
+      height: 25px;
+  }
+  
+  .input-ao {
+    border: 2px solid #A5A8AF;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 25px;
+  }
+  
+  /* Stylesheet for buttons and signals*/
+  /* The switch - the box around the slider */
+  .switch {
+      position: relative;
+      display: inline-block;
+      content: "";
+      width: 60px;
+      height: 34px;
+      vertical-align: middle;
+    }
+    
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #6EC800;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #6EC800;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  
+    /* Adding text in the toggle button */
+  .switch .labels {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      font-family: sans-serif;
+      transition: all 0.4s ease-in-out;
+  }
+  
+  .switch .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      right: 5px;
+      color: #4d4d4d;
+      opacity: 1;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s ease-in-out;
+  }
+  
+  .switch .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 5px;
+      color: #ffffff;
+      opacity: 0;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+      transition: all 0.4s ease-in-out;
+  }
+  
+  .switch input:checked~.labels::after {
+      opacity: 0;
+  }
+  
+  .switch input:checked~.labels::before {
+      opacity: 1;
+  }
+  
+  .ao-button {
+      background-color: #6EC800;
+      border: 0px;
+      height: 28px;
+  }
+  
+  /* Circles */
+  .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #DEDFE1;
+  }
+  
+  .s-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 2;
+    list-style: none;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .navigation-button {
+    text-decoration: none;
+    color: black;
+  }
+  

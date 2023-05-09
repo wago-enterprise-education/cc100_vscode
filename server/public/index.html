@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>CC100 Overview</title>
+    <link rel="stylesheet" href="/stylesheets/interface.css">
+    <link rel="stylesheet" href="/stylesheets/functional.css">
+    <link rel="icon" href="/images/favicon-16x16.png">
+    <script type="module" src="/javascripts/javascript.js" async></script>
+</head>
+<body>
+    <div>
+        <header class="logo-header">
+            <div class="header-logo-navigation">
+                <a href="https://www.wago.com/global/">
+                    <img class="wago-logo" src="/images/WAGO LOGO main_use_green_RGB.png" alt="test" width="90" height="33.3">
+                </a> 
+                
+                <ol class="s-navigation">
+                    <li class="md:d-none">
+                        <a href="#" class="navigation-button">
+                            <h2>Overview</h2>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Programming.html" class="navigation-button">
+                            <h2 id="DO_Reload" style="color:#DEDFE1";>Programming</h2>
+                            
+                        </a>
+                    </li>
+                </ol>
+            </div>
+                
+            <a href="Help.html">
+                <img class="link-menu-icon" src="/images/Questionmark-circle-icon.svg" alt="test" width="90" height="33.3" >
+            </a>
+                
+        </header>
+    </div>
+
+    <div class="wg-content-panel">
+        <div class="column">
+            <header class="io-panel io-header"> <h2>Ausgänge:</h2> </header>
+            <div class="io-panel do-panel">
+                <h2>Digital:</h2>
+                <div class="underpanel">
+                    <table cellspacing="9" class="dos-table">
+                        <tr>
+                            <td>
+                                <label>DO1</label>
+                                <label class="switch">
+                                    <input id="DO1" type="checkbox">
+                                    <span class="slider round"></span>
+                                    <!-- <span class="labels" data-on="ON" data-off="OFF"></span> -->
+                                </label>
+                            </td>
+                            <td>
+                                <label>DO2</label>
+                                <label class="switch">
+                                    <input id="DO2" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>DO3</label>
+                                <label class="switch">
+                                    <input id="DO3" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <label>DO4</label>
+                                <label class="switch">
+                                    <input id="DO4" type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="io-panel" style="flex-grow: 10;">
+                <h2>Analog:</h2>
+                <div class="underpanel">
+                    <div class="ao1-panel">
+                        <label>AO1</label> <br>
+                        <input id="AO1_Value" type="number" value="" class="input-ao">
+                        <label style="color: #7B7979;">mV</label> <br>
+                        <div style="display: flex;">
+                            <button id="AO1_Write" class="ao-button" type="button" style="background-color:#6EC800; flex-grow: 1;">Schreiben</button>
+                        </div>
+                    </div>
+                    <div class="ao2-panel">
+                        <label>AO2</label> <br>
+                        <input type="text" class="input-ao" >
+                        <label style="color: #7B7979;">mV</label> <br>
+                        <div style="display: flex;">
+                            <button class="ao-button" type="button" style="background-color:#6EC800; flex-grow: 1;">Schreiben</button>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="column">
+            <img class="img-cc100" src="/images/cc100_neu11.png" alt="cc100" width="851px" height="624px">
+            
+            <!-- ToDO -->
+            <!-- Mit Svg austauschen, um LEDs zu setzten, die sich mit der Größe mitskalieren -->
+
+            <!-- <svg id="cc100" width="851" height="624"> -->
+            <!-- <svg id="cc100" viewBox="0 0 851 624" width="852" height="624"> -->
+                <!-- <image class="img-cc100" src="images\cc100.jpg" alt="cc100" width="851px" height="624px"> -->
+                <!-- <image x="0" y="0" href="images\cc100.jpg" width="851px" height="624px"> -->
+                
+            <!-- </svg> -->
+        </div>
+
+        <div class="column">
+            <header class="io-panel io-header"> <h1>Eingänge:</h1> </header>
+            <div class="io-panel">
+                <h2>Digital:</h2>
+                <div class="underpanel grid">
+                    <div> 
+                        <div id="DI1" class="circle"></div>
+                        <label>DI1</label>
+                    </div>
+                    <div>
+                        <div id="DI5" class="circle"></div>
+                        <label>DI5</label>
+                    </div>
+                    <div>
+                        <div id="DI2" class="circle"></div>
+                        <label>DI2</label>
+                    </div>
+                    <div>
+                        <div id="DI6" class="circle"></div>
+                        <label>DI6</label>
+                    </div>
+                    <div>
+                        <div id="DI3" class="circle"></div>
+                        <label>DI3</label>
+                    </div>
+                    <div>
+                        <div id="DI7" class="circle"></div>
+                        <label>DI7</label>
+                    </div>
+                    <div>
+                        <div id="DI4" class="circle"></div>
+                        <label>DI4</label>
+                    </div>
+                    <div>
+                        <div id="DI8" class="circle"></div>
+                        <label>DI8</label>
+                    </div>
+                </div>
+            </div>
+            <div class="io-panel">
+                <h2>Analog:</h2>
+                <div class="underpanel" style="display: inline;">
+                    <div style="display: flex;">
+                        <label class="aipt-label">AI1</label>
+                        <div class="ai-display">0</div>
+                    </div> <br>
+                    <div style="display: flex;">
+                        <label class="aipt-label">AI2</label> 
+                        <div class="ai-display">0</div>
+                    </div> <br>
+                </div>
+            </div>            
+            <div class="io-panel">
+                <h2>Temperatur:</h2>
+                <div class="underpanel" style="display: inline; justify-content: left">
+                        <div style="display: flex;">
+                            <label class="aipt-label">PT1</label>
+                            <div class="temperature-display">0</div>
+                        </div> <br>
+                    <div>
+                        <div style="display: flex;">
+                            <label class="aipt-label">PT2</label> 
+                            <div class="temperature-display">0</div>
+                        </div> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

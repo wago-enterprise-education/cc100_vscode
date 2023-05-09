@@ -1,0 +1,21 @@
+{
+  "name": "myexpressapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "fs-js": "^1.0.6",
+    "fs.js": "^0.0.1",
+    "morgan": "~1.9.1",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "webpack": "^5.77.0"
+  }
+}
